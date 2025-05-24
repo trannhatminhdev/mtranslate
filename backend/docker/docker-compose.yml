@@ -1,0 +1,17 @@
+services:
+  backend:
+    image: minawm/mtranslate-server:v2
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    volumes:
+      - ../resources:/app/resources
+    working_dir: /app
+    command: /app/docker/start.sh
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: 1
+    #           capabilities: [gpu]
