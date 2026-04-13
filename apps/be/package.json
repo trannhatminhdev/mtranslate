@@ -1,0 +1,12 @@
+{
+  "name": "@mtrans/be",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "cd src && uvicorn main:app --reload --host 0.0.0.0 --port 8000",
+    "start": "cd src && uvicorn main:app --host 0.0.0.0 --port 8000",
+    "test": "cd src && pytest tests/ -v",
+    "lint": "cd src && ruff check .",
+    "clean": "find . -type d -name __pycache__ -exec rm -rf {} + 2>/dev/null; true"
+  }
+}
