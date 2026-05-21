@@ -1,25 +1,20 @@
 {
-  "$schema": "https://raw.githubusercontent.com/nicegui/tauri/tauri-v2/tooling/cli/schema.json",
-  "productName": "MTrans",
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "mtranslate",
   "version": "0.1.0",
-  "identifier": "com.mtrans.app",
+  "identifier": "com.min.mtranslate",
   "build": {
-    "frontendDist": "../dist",
-    "devUrl": "http://localhost:1420",
     "beforeDevCommand": "pnpm dev",
-    "beforeBuildCommand": "pnpm build"
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "pnpm build",
+    "frontendDist": "../dist"
   },
   "app": {
     "windows": [
       {
-        "title": "MTrans - AI Voice Translation",
-        "width": 900,
-        "height": 640,
-        "minWidth": 700,
-        "minHeight": 500,
-        "resizable": true,
-        "decorations": false,
-        "transparent": false
+        "title": "mtranslate",
+        "width": 800,
+        "height": 600
       }
     ],
     "security": {
