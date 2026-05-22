@@ -54,3 +54,8 @@ docker/*/data/
 coverage/
 .pytest_cache/
 htmlcov/
+
+# AI Tools 
+.claude
+.trae
+.codex
